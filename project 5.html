@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseRegForm</title>
+  </head>
+  <body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td>
+              <label for="FirstName">FirstName</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                placeholder="Ex:Vignesh"
+                name="FirstName"
+                id="FirstName"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Surname">Surname</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                placeholder="Ex:A"
+                name="Surname"
+                id="Surname"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Mobile Number">Mobile Number</label></td>
+            <td>
+              <input
+                type="tel"
+                placeholder="Ex: 98766 54321"
+                name="Mobile Number"
+                id="Mobile Number"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Email">Email</label>
+            </td>
+            <td>
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                placeholder="Ex:vigneshw169@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Password">Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="Password"
+                id="Password"
+                placeholder="min 8 characters"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="ConfirmPassword">Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="ConfirmPassword"
+                placeholder="min 8 characters"
+                id="ConfirmPassword"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="DOB">DOB</label></td>
+            <td><input type="date" name="DOB" id="DOB" /></td>
+          </tr>
+          <tr>
+            <td><label for="Age">Age</label></td>
+            <td>
+              <input type="number" min="18" max="65" name="Age" id="Age" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Gender"> gender </label></td>
+            <td>
+              <input type="radio" name="Gender" value="male" /><label for=""
+                >Male
+              </label>
+              <input type="radio" name="Gender" value="female" /><label for=""
+                >Female</label
+              >
+              <input type="radio" name="Gender" value="others" />
+              <label for="">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Select country</label></td>
+            <td>
+              <select name="country" id="country">
+                <option name="country" value="India">India</option>
+                <option name="country" value="USA">USA</option>
+                <option name="country" value="Germany">Germany</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Upload file">Upload File</label></td>
+            <td>
+              <input name="Upload file" id="Upload file" type="file" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="reset" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+    <fieldset>
+      <legend>Course Details</legend>
+      <form action="">
+        <label for="select course">Select Course</label> <br />
+        <select name="" id="">
+          <option value="">Python Full Stack</option>
+          <option value="">MERN Stack</option>
+          <option value="">Java Full Stack</option>
+          <option value="">Python for DataScience</option>
+        </select>
+        <br />
+        <label for="Delivery mode">Delivery Mode</label>
+        <input type="checkbox" name="Delivery mode" value="Offline" />
+        <label for="">Offline</label>
+        <input type="checkbox" name="Delivery mode" value="offline'" />
+        <label for="">Online</label> <br />
+        <label for="comments">comments</label> <br />
+        <textarea name="comments" id="comments" rows="5" cols="15"></textarea>
+        <br />
+        <input type="submit" />
+      </form>
+    </fieldset>
+  </body>
+</html>
